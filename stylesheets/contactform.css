@@ -1,0 +1,365 @@
+body, html{
+  width: 100%;
+  margin: 0;
+}
+/* LOGO */
+
+.logo{
+  margin: 5px 0px 2px 5px;
+  width: 250px;
+}
+
+
+
+/*MOBILE NAVIGATION*/
+
+
+/* Style the navigation menu */
+.topnavmobile {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnavmobile #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnavmobile a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+    font-family: Arial, Helvetica ,sans-serif;
+
+}
+
+/* Style the hamburger menu */
+.topnavmobile a.icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #6a77dd;
+}
+
+/* Style the search box inside the navigation bar */
+#search{
+  float: right !important;
+  padding: 3px!important;
+  padding-bottom: 3px!important;
+  border: none!important;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+
+/* Style the active link (or home/logo) */
+.bar {
+  background-color: #efefef;
+  color: white;
+  height: 48px;
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (min-width:0px) and (max-width:900px) {
+
+
+.topnav {
+  display: none;
+}
+.topnavmobile{
+  display: block !important;
+
+}
+
+}
+
+/*NAVIGATION SECTION*/
+
+/* Add a background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #efefef;
+  height: 48px;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Arial, Helvetica ,sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #6a77dd;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+#login {
+  float: right;
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: -15px;
+}
+
+#create {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #6a77dd;
+  color: white;
+  border-radius: 5px;
+    margin-top: -15px;
+
+}
+
+#create:hover {
+  opacity: 0.8;
+}
+img.avatar {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-top: -10px;
+
+  float: right;
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+
+}
+
+#icon {
+  float: right;
+  display: block;
+  padding: 0;
+  }
+
+#icon:hover {
+  background-color: #efefef;
+}
+
+/* TITLE */
+
+
+.background {
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+
+  h1{ 
+    font-size: 45px;
+    font-weight: normal;
+    font-family: Arial, Helvetica ,sans-serif;
+    text-align: center;
+    color: #466995;
+  }
+    
+  label{
+    font-family: Arial, Helvetica ,sans-serif;
+  }
+     
+ /* FORM */   
+
+  #email, #textarea, #fullname, #subject{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica ,sans-serif;
+  }
+
+ 
+
+  .container{  
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 80px;
+    background-color: #efefef;
+    padding: 25px;
+    width: 40%;
+    height: 650px;  
+    margin-bottom: 30px;      
+  }
+  
+  /* buttons */
+
+
+  input[type=submit]{
+   background-color: #466995;
+   color: white;
+   padding: 10px;    
+   cursor: pointer;    
+   font-family: Arial, Helvetica ,sans-serif;
+   font-size: 15px;
+   border: medium none;
+   border-radius: 4px;
+   letter-spacing: 0.8px;
+  } 
+
+  input[type=sumbit]:focus {
+   background-color: #6a77dd;
+  }
+
+
+
+/*FOOTER SECTION*/
+
+footer{
+  bottom: 0;
+  }
+ 
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:10px; }
+}
+ 
+ 
+.footer-distributed{
+  background-color: #a5e2ab;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 20px 20px 30px 20px;
+  margin-top: 50px;
+  margin: 0;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+  color:  white;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+  width: 30%;
+  color:  white;
+}
+ 
+ 
+/* Footer links */
+ 
+.footer-distributed {
+  color:  white;
+
+}
+
+.footer-links a {
+  color: #6a77dd;
+}
+
+ 
+.footer-distributed .footer-company-name{
+  color:  white;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+  width: 35%;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+  width: 30%;
+}
+ 
+ 
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+ 
+.footer-distributed .footer-icons img{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #a5e2ab;
+  border-radius: 2px;
+ 
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+ 
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+ 
+ 
+@media (max-width: 880px) {
+ 
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+ 
+  
+}
+
+@media screen and (max-width:1000px) {
+  .container{
+    width: 60%;
+  }
+
+}
+@media screen and (max-width:800px) {
+  .container{
+    width: 80%;
+    
+  }
+
+  h1{ font-size: 30px;}
+  
+}

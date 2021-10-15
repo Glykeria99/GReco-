@@ -1,0 +1,562 @@
+
+/*LOGO SECTION*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  margin: 0;
+
+}
+
+
+.logo {
+        margin: 5px 0px 2px 5px;
+        width: 250px;
+      }
+
+
+/*MOBILE NAVIGATION*/
+
+
+/* Style the navigation menu */
+.topnavmobile {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnavmobile #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnavmobile a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnavmobile a.icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #6a77dd;
+}
+
+/* Style the search box inside the navigation bar */
+.topnavmobile input[type=text] {
+  float: right;
+  padding: 3px;
+  padding-bottom: 3px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+
+/* Style the active link (or home/logo) */
+.bar {
+  background-color: #efefef;
+  color: white;
+  height: 48px;
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (min-width:0px) and (max-width:900px) {
+
+
+.topnav {
+  display: none;
+}
+.topnavmobile{
+  display: block !important;
+
+}
+
+}
+
+/*NAVIGATION SECTION*/
+
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Add a background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #efefef;
+
+  text-align: center;
+  position: relative;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+ #login {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#create {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #6a77dd;
+  color: white;
+  border-radius: 5px;
+}
+
+#create:hover {
+  opacity: 0.8;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #6a77dd;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/*icon for logged in user*/
+
+img.avatar {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+
+  float: right;
+  display: block;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  
+}
+
+#icon {
+  float: right;
+  display: block;
+  padding: 0;
+  }
+
+#icon:hover {
+  background-color: #efefef;
+}
+
+/*MAIN*/
+
+.main {
+
+  display: grid;
+  align-content: center;
+
+}
+
+
+
+/*PHOTO CONTAINER SECTION*/
+
+body {
+
+  background-color: #FFF;
+  margin: 0px;
+
+
+}
+
+body {
+  background-color: #FFF;
+  margin: 0px;
+}
+.containerPhoto img{
+  z-index: -10;
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  left: 0;
+  object-fit: cover;
+}
+.containerPhoto {
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+}
+h1 {
+  color: black;
+  position: relative;
+  top: 50px;
+  top: 30px;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-top: 20px;
+  align-items: center;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.signuplink {
+  color: black;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.signup:hover {
+
+  background-color: #efefef;
+  opacity: 0.7;
+}
+
+p.motto {
+  color: black;
+  position: relative;
+  top: 30px;
+  width: 500px;
+  margin: 0 auto;
+  font-size: 40px;
+  text-align: center;
+
+}
+
+/*CONTAINER WITH TEXT SECTION*/
+
+.container {
+  border-radius: 5px;
+  background-color: #efefef;
+  padding: 20px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+}
+
+/*AVAILABLE EVENTS SECTION*/
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.textforevents {
+  text-align: center;
+  padding-top: 20px;
+  color:#6a77dd; 
+  position: relative;
+}
+
+#findmore {
+  color:#6a77dd;
+}
+
+h3 {
+  display: inline-block;
+}
+
+
+#time {
+  width: 20px;
+  height: 20px;
+}
+.mins {
+  display: inline-block;
+  font-size: 14px;
+  color: #4a4a4a;
+  position: relative;
+  bottom: 5px;
+  margin: 0px;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: repeat(2, 250px);
+  margin-top: 44px;
+  margin-bottom: 44px;
+  grid-auto-rows: 500px;
+  justify-items: center;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  grid-auto-flow: row;
+
+  text-align: center;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  color: #4a4a4a;
+  border-top: 1px solid #4a4a4a;
+  text-align: center;
+  
+}
+
+.event {
+  width: 180px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  padding: 10px 10px 10px 10px;
+  margin: 0px;
+}
+
+.eventpage {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+/*FOOTER SECTION*/
+
+footer{
+  bottom: 0;
+
+  }
+ 
+@media (max-height:800px){
+  footer { position: static; width: 100%; }
+  header { padding-top:10px; }
+}
+ 
+ 
+.footer-distributed{
+  background-color: #a5e2ab;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 20px 20px 30px 20px;
+  color:  white;
+  margin-top: 50px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+  color:  white;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+  width: 30%;
+  color:  white;
+}
+ 
+ 
+/* Footer links */
+
+.footer-links a {
+  color: #6a77dd;
+}
+
+ 
+.footer-distributed .footer-company-name{
+  color:  white;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+  width: 35%;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+  width: 30%;
+}
+ 
+ 
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+ 
+.footer-distributed .footer-icons img{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #a5e2ab;
+  border-radius: 2px;
+ 
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+ 
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+ 
+@media (max-width: 880px) {
+ 
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+ 
+  
+}
+
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media (max-width: 900px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+    
+      @media (max-width: 945px) {
+        .footer-left,
+        .footer-center,
+        .footer-right{
+          display: block;
+          width: 100%;
+          margin: 0;
+          margin-bottom: 40px;
+          text-align: center;
+        }        
+        .footer-right{
+          margin-bottom: 0px;
+        }
+      }
+
+
+
+      /* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width:600px) {
+
+ .container{
+  height: 300px;
+ }
+
+.containerPhoto {
+  max-width: 95%;
+  
+}
+p.motto{
+  font-size: 30px;
+  width: 320px;
+
+}
+#test {
+  max-width: 95%;
+  height:400px !important;
+  margin-top: 100px;
+ }
+
+
+.events {
+  width: 85%;
+  display: block;
+ margin-left: auto;
+margin-right: auto;
+
+  
+}
+
+.event {
+  width: 80%;
+  margin: 1px;
+margin-left: auto;
+margin-right: auto;  
+}
+
+.textforevents {
+ 
+  padding-top: 20px;
+margin-top: 30px;
+}
+
+
+}
+
+
+@media screen and (max-width:320px) {
+
+p.motto{
+  font-size: 24px;
+  width: 280px;
+
+}
+
+.textforevents {
+ 
+  padding-top: 70px;
+margin-top: 30px;
+}
+
+
+
+}
+

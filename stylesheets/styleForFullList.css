@@ -1,0 +1,526 @@
+body{
+  margin: 0;
+}
+/*LOGO SECTION*/
+
+.logo {
+        margin: 5px 0px 2px 5px;
+        width: 250px;
+      }
+
+
+/*MOBILE NAVIGATION*/
+
+
+/* Style the navigation menu */
+.topnavmobile {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnavmobile #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnavmobile a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnavmobile a.icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #6a77dd;
+}
+
+/* Style the search box inside the navigation bar */
+.topnavmobile input[type=text] {
+  float: right;
+  padding: 3px;
+  padding-bottom: 3px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+
+/* Style the active link (or home/logo) */
+.bar {
+  background-color: #efefef;
+  color: white;
+  height: 48px;
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (min-width:0px) and (max-width:900px) {
+
+
+.topnav {
+  display: none;
+}
+.topnavmobile{
+  display: block !important;
+
+}
+
+}
+
+
+/*NAVIGATION SECTION*/
+
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Add a background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #efefef;
+  margin-bottom: 30px;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+ #login {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#create {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #6a77dd;
+  color: white;
+  border-radius: 5px;
+}
+
+#create:hover {
+  opacity: 0.8;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #6a77dd;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/*icon for logged in user*/
+
+img.avatar {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+
+  float: right;
+  display: block;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  
+}
+
+#icon {
+  float: right;
+  display: block;
+  padding: 0;
+  }
+
+#icon:hover {
+  background-color: #efefef;
+}
+
+/* TITLE for SEARCH.PHP */
+
+.background {
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 10px;
+}
+
+
+p.title{
+  color: #466995;
+  font-family: Arial, Helvetica ,sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+
+/*FILTERING THROUGH THE GOALS*/
+
+.filterDiv {
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.highlight {
+  background-color: #666;
+  color: white;
+}
+
+
+
+/*AVAILABLE EVENTS SECTION*/
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#time {
+  width: 20px;
+  height: 20px;
+}
+.mins {
+  display: inline-block;
+  font-size: 14px;
+  color: #4a4a4a;
+  position: relative;
+  bottom: 5px;
+  margin: 0px;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  margin-top: 44px;
+  margin-bottom: 44px;
+  grid-auto-rows: 500px;
+  justify-items: center;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  grid-auto-flow: row;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #4a4a4a;
+  padding: 10px 0px 10px 10px;
+  border-top: 1px solid #4a4a4a;
+}
+
+.event {
+  width: 180px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  padding: 10px 10px 10px 10px;
+  margin: 0px;
+}
+
+
+/*PREVIOUS AND NEXT BUTTONS*/
+
+.pagination {
+  display: inline-block;
+}
+
+.center {
+
+  margin-left: 600px;
+
+}
+
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+
+
+.pagination a:hover {
+background-color: #a5e2ab;
+  color: white;
+  border-radius: 5px;
+}
+
+
+
+/* FOOTER SECTION*/
+
+footer{
+  bottom: 0;
+  }
+ 
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:10px; }
+}
+ 
+ 
+.footer-distributed{
+  background-color: #a5e2ab;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 20px 20px 30px 20px;
+  margin-top: 50px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+  color:  white;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+  width: 30%;
+  color:  white;
+}
+ 
+ 
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+  color:  white;
+  margin: 20px 0 12px;
+}
+
+.footer-links a {
+  color: #6a77dd;
+}
+
+ 
+.footer-distributed .footer-company-name{
+  color:  white;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+  width: 35%;
+  
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+  width: 30%;
+}
+ 
+
+
+ 
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+ 
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  white;
+  border-radius: 2px;
+ 
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+ 
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+#myBtnContainer{
+  margin-left: 10px;
+}
+
+@media (max-width: 880px) {
+ 
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+ 
+  
+}
+
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 900px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+    
+      @media (max-width: 945px) {
+        .footer-left,
+        .footer-center,
+        .footer-right{
+          display: block;
+          width: 100%;
+          margin: 0;
+          margin-bottom: 40px;
+          text-align: center;
+        }        
+        .footer-right{
+          margin-bottom: 0px;
+        }
+      }
+
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (min-width:601px) and (max-width:1045px) {
+ 
+  
+#myBtnContainer {
+  width: 80%;
+  margin-top: 20px;
+
+  display: inline-block;
+  text-align: center;
+
+}
+.btn {
+  margin: 5px;
+
+}
+
+.events {
+  width: 80%;
+  display: block;
+
+}
+
+
+.event {
+  width: 80%;
+  margin: 1px;
+  margin-left: 100px;
+
+}
+
+
+}
+
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width:600px) {
+
+
+#myBtnContainer {
+  width: 95%;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+
+
+}
+
+.btn {
+
+  margin: 5px;
+}
+
+.events {
+  width: 95%;
+  display: block;
+}
+
+.event {
+  width: 80%;
+  margin: 1px;
+  margin-left: 30px;
+}
+
+}
+
+

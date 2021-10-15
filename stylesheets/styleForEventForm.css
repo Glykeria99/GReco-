@@ -1,0 +1,303 @@
+
+/*LOGO SECTION*/
+
+.logo {
+        margin: 5px 0px 2px 5px;
+        width: 250px;
+      }
+
+/*MOBILE NAVIGATION*/
+
+
+/* Style the navigation menu */
+.topnavmobile {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnavmobile #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnavmobile a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+   font-family: Arial, Helvetica ,sans-serif;
+}
+
+/* Style the hamburger menu */
+.topnavmobile a.icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #6a77dd;
+}
+
+/* Style the search box inside the navigation bar */
+.topnavmobile input[type=text] {
+  float: right;
+  padding: 3px;
+  padding-bottom: 3px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+
+/* Style the active link (or home/logo) */
+.bar {
+  background-color: #efefef;
+  color: white;
+  height: 48px;
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (min-width:0px) and (max-width:900px) {
+
+
+.topnav {
+  display: none;
+}
+.topnavmobile{
+  display: block !important;
+
+}
+
+}
+/*NAVIGATION SECTION*/
+
+* {
+  font-family: Arial, sans-serif;
+}
+
+
+/* Add a background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #efefef;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+ #login {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#create {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #6a77dd;
+  color: white;
+  border-radius: 5px;
+}
+
+
+#create:hover {
+  opacity: 0.8;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #6a77dd;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/*icon for logged in user*/
+
+img.avatar {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+
+  float: right;
+  display: block;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  
+}
+
+#icon {
+  float: right;
+  display: block;
+  padding: 0;
+  }
+
+#icon:hover {
+  background-color: #efefef;
+}
+
+/*THE REST*/
+
+
+body {
+  background-color: #FFF;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #466995;
+  border-bottom: 1px solid #466995;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+
+h1 {
+  color: #466995;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+h3 {
+  color: #466995;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+img {
+  height: 120px;
+  width: 120px;
+}
+
+h4 {
+  color: #466995;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase
+}
+
+p {
+  color: #333;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #DBE9EE;
+  text-align: center;
+  align-items: inline;
+}
+
+.welcome {
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
+
+.question {
+  text-align: center;
+  position: relative;
+  top: 40px;
+  
+}
+
+.answer {
+  border: 1px solid #466995;
+  margin: 20px;
+  display: inline-block;
+  
+}
+
+.answer:hover {
+
+  opacity: 0.7;
+}
+
+.answer:active {
+
+  border: solid 2px #466995;
+
+  }
+
+
+/*INPUT SECTION*/
+
+#location, #title,select, textarea{
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+footer {
+  height: 100px;
+  margin-top: 80px;
+}
+
+.sub {
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
+
+.sub input {
+  color: #466995;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px;
+  margin-bottom: 60px;
+}

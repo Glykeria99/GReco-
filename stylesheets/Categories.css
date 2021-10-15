@@ -1,0 +1,365 @@
+* {
+        box-sizing: border-box;
+      } 
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        /*padding: 10px;*/
+        margin: 0;
+        background: #efefef;
+      }
+
+      /* Header/Blog Title */
+      .forum-foto {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+        object-fit: cover;
+        height: 400px;
+      }
+
+      .logo{
+        margin: 10px 5px 13px 10px;
+        float: left;
+        width: 150px;
+      }
+     
+      /* Style the top navigation bar */
+      nav {
+        overflow: hidden;
+        position: sticky;
+        display: flex;
+        align-items: stretch;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+        background-color: rgb(4, 74, 121);
+      }
+
+      .navbar{
+        float: left;
+        text-align: center;
+        width: 100%;
+        height: initial;
+      }
+
+      /* Style the nav links */
+      .navbar a {
+        float: left;
+        display:flex;
+        align-items:center;
+        height: 100%;
+        color: white;
+        font-size: 19px;
+        text-decoration: none;
+        text-align: center;
+        vertical-align: middle;
+        align-content: center;
+        transition: background-color .3s;
+        padding: 14px 20px;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(3, 52, 85);
+        color: white;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 70%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 30%;
+        padding-left: 20px;
+      }
+
+      .avatar{
+        width: 80px;
+        height: 80px;      
+        margin-right: 20px;
+        float: left;
+        border-radius: 50%;
+      }
+
+      .category-title{
+        max-width: 300px;
+        height: auto;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+
+      .category-title{
+        text-decoration: none;
+        color: rgb(4, 74, 121);
+      }
+
+      .category-title:hover{
+        color: rgb(3, 52, 85);
+      }
+
+      .category td{
+        border-bottom: #d0d0d0 1px solid;
+        padding-bottom: 10px;
+      }
+
+      .category{
+        margin-bottom: 10px;
+      }
+
+      .count-cell{
+        /*display: block;*/
+        text-align: right;
+        /*line-height: 1.4;*/
+        /*float:right;*/
+      }
+
+      .topic-title{
+        padding-top: 10px;
+      }
+
+      .topic-title a{
+        text-decoration: none;
+        font-size: 18px;
+        color: rgb(4, 74, 121);
+      }
+
+      .topic-title a:hover{
+        color: rgb(3, 52, 85);
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        float: left;
+        border-spacing: 0;
+        background-color: white;
+        width: 100%;
+        position: relative;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 20px;
+      }
+
+      .card:hover{
+        background-color: #ebebeb;
+      }
+
+      /*.card tr:hover{
+        background-color: #ebeb;
+      }*/
+
+      .card::after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .rightcard {
+        background-color: white;
+        padding: 1px 20px 20px 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 20px;
+      }
+
+      .rightcard:hover{
+        background-color: #ebebeb;
+      }
+
+      .rightcard::after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .row{
+        margin: 20px 40px 0px 40px;
+      }
+
+      /* Clear floats after the columns */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      footer {
+        padding: 20px;
+        text-align: center;
+        background: rgb(51, 114, 151);
+        /*margin-top: 20px;*/
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        nav{
+          float: none;
+          display: block;
+          width: 100%;
+        }
+
+        .logo{
+          float: none;
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 10px;
+        }
+
+        .navbar{
+          text-align: center;
+          width: 100%;
+          height: initial;
+        }
+
+        /* Style the nav links */
+        .navbar a {
+          float: none;
+          display: block;
+          height: 100%;
+          color: white;
+          font-size: 19px;
+          text-decoration: none;
+          text-align: center;
+          transition: background-color .3s;
+          padding: 14px 20px;
+        }
+
+      }
+
+      .search{
+        float: left;
+        display: flex;
+        flex: 1 1 100%;
+        width: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 20px;
+      }
+
+      .searchbutton{
+        float: left;
+        flex: 0 0 auto;
+        background-color: rgb(4, 74, 121);
+        transition: background-color .3s;
+        width: 50px;
+        height: 50px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .searchbutton:hover{
+        background-color: rgb(3, 52, 85);
+      }
+
+      .searchbar{
+        float: left;
+        flex: 1 1 100%;
+        height: 50px;
+        min-width: 0;
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+      }
+
+      .sortbutton{
+        float: left;
+        padding: none;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+      }
+
+      .newtopic{
+        float: right;
+        position: relative;
+        cursor: pointer;
+        height: 50px;
+        width: 30%;
+        margin-left: 20px;
+        border: none;
+        background-color: rgb(4, 74, 121);
+        transition: background-color .3s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: white;
+        font-size: 120%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .newtopic:hover{
+        background-color: rgb(3, 52, 85);
+      }
+
+      .newtopic::after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .account-card a{
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(4, 74, 121);
+      }
+
+      .account-card a:hover{
+        color: rgb(3, 52, 85);
+      }
+
+      .my-topic, .popular-topic{
+        margin-bottom: 10px;
+        border-bottom: #d0d0d0 1px solid;
+      }
+
+      .my-topic-title a, .popular-topic-title a{
+        text-decoration: none;
+        color: rgb(4, 74, 121);
+      }
+
+      .my-topic-title a:hover, .popular-topic-title a:hover{
+        color: rgb(3, 52, 85);
+      }
+
+      .my-topic-title, .popular-topic-title{
+        font-weight: bold;
+      }
+
+      .topic-date{
+        font-size: 15px;
+        color: #999;
+      }
+
+      .showmore{
+        text-decoration: none;
+        color: rgb(4, 74, 121);
+        display:inline-block;
+        margin-top: 5px;
+      }
+
+      .showmore:hover{
+        color: rgb(3, 52, 85);
+      }
+
+      td.showmore{
+        margin-top: 20px;
+      }
+
+      td.showmore a{
+        text-decoration: none;
+        color: rgb(4, 74, 121);
+      }
+
+      td.showmore a:hover{
+        color: rgb(3, 52, 85);
+      }
